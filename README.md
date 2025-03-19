@@ -1,54 +1,53 @@
-# React + TypeScript + Vite
+# Prueba Técnica - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Descripción
+Este proyecto es una prueba técnica desarrollada con **Vite + React**. Proporciona una interfaz rápida y moderna para consumir APIs y manejar el estado de la aplicación.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🚀 Instalación y ejecución
+### 1️⃣ Clonar el repositorio
+```sh
+git clone https://github.com/Dark-rambler/prueba-frontend.git
+cd prueba-frontend
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2️⃣ Instalar dependencias
+```sh
+npm install
+```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 3️⃣ Iniciar la aplicación
+```sh
+npm run dev
+```
+El proyecto se ejecutará en `http://localhost:5173/`.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+---
+
+## 📌 Scripts disponibles
+- `npm run dev` → Inicia el servidor de desarrollo en `http://localhost:5173/`
+- `npm run build` → Genera una versión optimizada para producción
+- `npm run preview` → Previsualiza la versión de producción
+
+---
+
+## 🛠️ Tecnologías usadas
+- **Vite** → Entorno de desarrollo rápido
+- **React** → Biblioteca para construir la UI
+- **React Router** (si aplica) → Manejo de rutas
+- **CSS Modules / Tailwind / Styled Components** (dependiendo del proyecto)
+
+---
+
+## 📄 Estructura del proyecto
+```
+prueba-frontend/
+│── src/
+│   ├── components/  # Componentes reutilizables
+│   ├── utils/     # Llamadas a APIs
+│   ├── hooks/        # Custom hooks
+│   ├── App.jsx       # Punto de entrada
+│── public/
+│── index.html
+│── package.json
+│── vite.config.js
 ```
