@@ -36,10 +36,10 @@ El proyecto se ejecutará en `http://localhost:5173/`.
 ---
 
 ## 🛠️ Tecnologías usadas
-- **Vite** → Entorno de desarrollo rápido
-- **React** → Biblioteca para construir la UI
-- **React Router** (si aplica) → Manejo de rutas
-- **CSS Modules / Tailwind / Styled Components** (dependiendo del proyecto)
+- **Vite** 
+- **React**
+- **Mantine.Dev**
+- **CSS Modules / Tailwind ** 
 
 ---
 
