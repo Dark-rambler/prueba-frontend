@@ -14,8 +14,13 @@ cd prueba-frontend
 ```sh
 npm install
 ```
+### 3️⃣ Configurar variables de entorno
+Crea un archivo `.env` en la raíz del proyecto y agrega:
+```
+VITE_CHUCK_NORRIS_API_URL=https://api.chucknorris.io/jokes/
+```
 
-### 3️⃣ Iniciar la aplicación
+### 4️⃣ Iniciar la aplicación
 ```sh
 npm run dev
 ```
